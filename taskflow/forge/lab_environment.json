@@ -1,0 +1,33 @@
+{
+  "projectName": "lab_project",
+  "environment": "development",
+
+  "logging": {
+    "level": "debug",
+    "destinations": ["console", "file"],
+    "filePath": "./logs/project.log",
+    "rotation": {
+      "enabled": true,
+      "maxSizeMb": 10,
+      "maxFiles": 5
+    }
+  },
+
+  "features": {
+    "enableDiagnostics": true,
+    "enableRealTimeAlerts": false,
+    "enableMetrics": true,
+    "enableCaching": true
+  },
+
+  "security": {
+    "requireAuth": false,
+    "allowedOrigins": ["*"]
+  },
+
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "",
+    "maintainer": ""
+  }
+}
